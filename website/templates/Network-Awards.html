@@ -1,0 +1,7 @@
+{% extends "base.html" %} {% block title %}Network-Awards{% endblock %} {% block
+    content %}
+    <form method='POST' enctype='multipart/form-data'>
+      {{form.hidden_tag()}}
+      {{form.file()}}
+      {{form.submit()}}
+    {% endblock %}
